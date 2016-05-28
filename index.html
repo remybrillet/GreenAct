@@ -21,6 +21,7 @@ firebase.initializeApp(config);
 </script>
 
 <script>
+var actionList = [];
 
 var email = document.getElementById("email");
 var password = document.getElementById("password");
@@ -49,8 +50,16 @@ var description = document.getElementById("description");
 		<input type="date" id="dateintervention" value="2000-01-01" />
 		<input type="text" id="localisation" value="PARIS" />
 		<input type="text" id="description" value="videz les ordures de Paris" />
-  		<button type="button" onclick="createActionPersonnal(titre.value, typeaction.value, dateintervention.value, localisation.value, description.value);">Créer une action personnelle</button>
+  		<button type="button" onclick="createAction(titre.value, typeaction.value, dateintervention.value, localisation.value, description.value);">Créer une action personnelle</button>
 	</form>
+</div>
+
+<div>
+	<button type="button" onclick="getActionList(actionList);">getAction</button>
+</div>
+
+<div>
+	<button type="button" onclick="displayList(actionList);">displayList</button>
 </div>
 
 </body>
