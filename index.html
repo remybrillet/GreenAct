@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script src="./js/user.js"></script>
+	<script src="./js/action.js"></script>
+<META charset="UTF-8">
+</head>
+
+<body>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDd_9WoxOKk6IdhlELqtNG5RTRCAmcI70s",
+    authDomain: "project-4069834197791550620.firebaseapp.com",
+    databaseURL: "https://project-4069834197791550620.firebaseio.com",
+    storageBucket: "project-4069834197791550620.appspot.com",
+  };
+firebase.initializeApp(config);
+</script>
+
+<script>
+
+var email = document.getElementById("email");
+var password = document.getElementById("password");
+
+var titre = document.getElementById("titre");
+var typeaction = document.getElementById("typeaction");
+var dateintervention = document.getElementById("dateintervention");
+var localisation = document.getElementById("localisation");
+var description = document.getElementById("description");
+
+</script>
+	<div>
+		<form id="loginForm" action="#">
+			<input type="text" id="email" value="nico@itescia.fr" />
+			<input type="password" id="password" value="123456" />
+			<button type="button" onclick="login(email.value, password.value);">OK</button>
+			<button type="button" onclick="logout();">Deco</button>
+		</form>
+		<span id="output"></span>
+	</div>
+
+<div>
+	<form id="creationActionPersonnalForm" action="#">
+		<input type="text" id="titre" value="VIDERLESORDURES" />
+		<input type="text" id="typeaction" value="Personnel" />
+		<input type="date" id="dateintervention" value="2000-01-01" />
+		<input type="text" id="localisation" value="PARIS" />
+		<input type="text" id="description" value="videz les ordures de Paris" />
+  		<button type="button" onclick="createActionPersonnal(titre.value, typeaction.value, dateintervention.value, localisation.value, description.value);">Créer une action personnelle</button>
+	</form>
+</div>
+
+</body>
+</html>

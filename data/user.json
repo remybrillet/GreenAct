@@ -1,0 +1,24 @@
+{
+  "users" : {
+    "id1" : {
+      "Mail" : "tom@itescia.fr",
+      "Nom" : "Thomas"
+    },
+    "id2" : {
+      "Mail" : "alex@itescia.fr",
+      "Nom" : "Alex"
+    },
+    "id3" : {
+      "Mail" : "nico@itescia.fr",
+      "Nom" : "nico"
+    },
+    "id4" : {
+      "Mail" : "mika@itescia.fr",
+      "Nom" : "Mika"
+    },
+    "id5" : {
+      "Mail" : "remy@itescia.fr",
+      "Nom" : "remy"
+    }
+  }
+}
